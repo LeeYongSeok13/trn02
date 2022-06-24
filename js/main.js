@@ -84,4 +84,10 @@ $(function () {
             $('.toTop').fadeOut(1000)
         }
     })
+
+    $('#fl').on('change', function () {
+        console.log($(this), $(this).val());
+        var lnk = $(this).val();
+        lnk && window.open(lnk);
+    })
 });
